@@ -14,6 +14,9 @@ while no_of_chance < chance:
 
     if _input == _random:
         print("Game is Tie, both get 1 point each \n ")
+        computer_point = computer_point + 1
+        human_point = human_point + 1
+        print(f"computer_point is {computer_point} and your point is {human_point} \n ")
 
     # if user enter s
 
