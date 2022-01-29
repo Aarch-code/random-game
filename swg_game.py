@@ -1,7 +1,7 @@
 import random
 
 n = input("Enter your name: ")
-print(f"Welcome to The Game of Snake, Water & Gun, {n}. \nPress s for snake, w for water, g for gun")
+print(f"Hello {n}, Welcome to The Game of Snake, Water & Gun. \nPress s for snake, w for water, g for gun")
 lst = ["s", "w", "g"]
 chance = 10
 no_of_chance = 0
@@ -62,10 +62,10 @@ while no_of_chance < chance:
         print(f"computer_point is {computer_point} and your point is {human_point} \n ")
 
     else:
-        print("you have input wrong \n")
+        print("your input is invalid. \n")
 
     no_of_chance = no_of_chance + 1
-    print(f"{chance - no_of_chance} is left out of {chance} \n")
+    print(f"{chance - no_of_chance} chance(s) left out of {chance} chances \n")
 
 print("Game over")
 
@@ -73,9 +73,9 @@ if computer_point == human_point:
     print("Tie")
 
 elif computer_point > human_point:
-    print("Computer wins and you loose")
+    print("Computer wins and you lose")
 
 else:
-    print("you win and computer loose")
+    print("You win and computer lose")
 
 print(f"your point is {human_point} and computer point is {computer_point}")
